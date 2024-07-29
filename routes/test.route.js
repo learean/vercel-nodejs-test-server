@@ -3,9 +3,6 @@ const { SuccessResponseObject } = require('../common/http');
 
 const r = Router();
 
-r.get('/', (req, res) => {
-    console.log(req.data)
-    res.json(new SuccessResponseObject(req.data))
-});
+r.get('/', (req, res) => res.json(new SuccessResponseObject('demo path live 🚀')));
 
 module.exports = r;
