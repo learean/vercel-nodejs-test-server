@@ -4,7 +4,7 @@ const { SuccessResponseObject } = require('../common/http');
 const r = Router();
 
 r.post('/', (req, res) => {
-    console.log(req.data)
+    console.log('FIRE');
     res.json(new SuccessResponseObject(data=req.data));
 });
 
